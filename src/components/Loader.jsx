@@ -24,7 +24,7 @@ const Loader = ({ onComplete }) => {
 
         tl.to(progressRef.current, {
             width: '100%',
-            duration: 2,
+            duration: 1.5,
             ease: 'power2.inOut'
         })
             .to(textRef.current, {
@@ -37,7 +37,7 @@ const Loader = ({ onComplete }) => {
     }, { scope: containerRef });
 
     return (
-        <div ref={containerRef} className="fixed inset-0 z-[100] bg-black flex flex-col items-center justify-center">
+        <div ref={containerRef} className="fixed inset-0 z-100 bg-black flex flex-col items-center justify-center">
             <div className="w-64">
                 {/* <div className="flex justify-between items-end mb-2" ref={textRef}>
                     <span className="text-white font-display font-bold text-2xl tracking-tight">Skillfi</span>

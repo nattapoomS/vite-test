@@ -15,7 +15,7 @@ export default {
                 'border-color': 'rgba(255, 255, 255, 0.1)',
             },
             fontFamily: {
-                sans: ['Inter', 'sans-serif'],
+                sans: ['Noto Sans Thai', 'Inter', 'sans-serif'],
                 display: ['Outfit', 'sans-serif'],
             },
         },

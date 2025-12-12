@@ -1,47 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
 
-      body {
-        background-color: #000;
-        color: white;
-        overflow-x: hidden;
-      }
-      /* Custom scrollbar for dashboard lists */
-      .no-scrollbar::-webkit-scrollbar {
-        display: none;
-      }
-      .no-scrollbar {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-      }
-      h1 {
-        -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.42);
-        text-shadow: rgb(0, 0, 0) 0px 4px 24px;
-        color: rgba(255, 255, 255, 0.59);
-      }
-      .news-card{
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    width: 100%;
-    z-index: 1;
-    background: linear-gradient(182.51deg, rgba(255, 255, 255, 0.04) 27.09%, rgba(90, 90, 90, 0.04) 58.59%, rgba(0, 0, 0, 0.04) 92.75%);
-    overflow: hidden;
-    position: relative;
-    box-shadow: rgba(0, 0, 0, 0.66) 0px 53.1263px 86.7729px, rgba(0, 0, 0, 0.4) 0px 20.4635px 27.6388px, rgba(0, 0, 0, 0.26) 0px 4.32881px 7.07039px;
-    backdrop-filter: blur(18px);
-    border-radius: 10px;
-    padding: 22px 24px 32px 28px;
-    
-      }
-    
-    .news-card::before {
-    content: "";
-    position: absolute;
-    inset: 0px;
-    filter: url(#noiseFilter);
-    opacity: 0.1;
-    pointer-events: none;
-    
+body {
+  background-color: #000;
+  color: white;
+  overflow-x: hidden;
+  font-family: 'Noto Sans Thai', sans-serif;
+}
+
+/* Custom scrollbar for dashboard lists */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+h1 {
+  -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.42);
+  text-shadow: rgb(0, 0, 0) 0px 4px 24px;
+  color: rgba(255, 255, 255, 0.59);
+
+}
+
+p,
+h3,
+h2 {
+  font-family: 'noto sans thai', sans-serif;
+}
+
+.news-card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+  z-index: 1;
+  background: linear-gradient(182.51deg, rgba(255, 255, 255, 0.04) 27.09%, rgba(90, 90, 90, 0.04) 58.59%, rgba(0, 0, 0, 0.04) 92.75%);
+  overflow: hidden;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.66) 0px 53.1263px 86.7729px, rgba(0, 0, 0, 0.4) 0px 20.4635px 27.6388px, rgba(0, 0, 0, 0.26) 0px 4.32881px 7.07039px;
+  backdrop-filter: blur(18px);
+  border-radius: 10px;
+  padding: 22px 24px 32px 28px;
+
+}
+
+.special-offer {
+  background: linear-gradient(90deg, #121214 0%, #75757B 16.66%, #4e4f55 38.86%, #0D0D0F 59.13%, #181819 80.87%, #0F0F12 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.308);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+}
+
+.special-offer::before {
+  content: "";
+  position: absolute;
+  inset: 0px;
+  filter: url(#noiseFilter);
+  opacity: 0.1;
+  pointer-events: none;
+
+}
+.news-card::before {
+  content: "";
+  position: absolute;
+  inset: 0px;
+  filter: url(#noiseFilter);
+  opacity: 0.1;
+  pointer-events: none;
+
 }

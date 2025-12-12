@@ -3,7 +3,7 @@ import { Telescope, Bookmark, Home, Compass, Calendar, Image as ImageIcon, Hexag
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Rock from './image/Rock.jpg';
+import Rock from './image/rock.jpg';
 import '../styles/index.css';
 
 gsap.registerPlugin(ScrollTrigger);
